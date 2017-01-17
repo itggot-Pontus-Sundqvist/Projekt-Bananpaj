@@ -1,19 +1,57 @@
 body {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
 }
 
 header {
   display: flex;
+  color: yellow;
+  align-items: center;
+  justify-content: center;
 }
 
 @media (orientation:portrait) {
   main {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
+    margin-right: 5%;
+    margin-left: 5%;
   }
+
   .contentbox {
-    
+    margin: 10px;
+    text-align: justify;
+  }
+
+  .whole {
+    display: flex;
+    flex-direction: row;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+  }
+
+  a {
+    font-size: 40px;
+    color: #00FF00;
+    text-decoration: none;
+  }
+
+  h1 {
+    font-size: 70px;
+  }
+
+  footer{
+    display: flex;
+    font-size: 30px;
+    color: #FFFFFF;
+    background-color: #212121;
+    align-items: center;
+    justify-content: center;
   }
 }
