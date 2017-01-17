@@ -1,0 +1,19 @@
+body {
+  display: flex;
+  flex-direction: row;
+}
+
+header {
+  display: flex;
+}
+
+@media (orientation:portrait) {
+  main {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .contentbox {
+    
+  }
+}
