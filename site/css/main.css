@@ -1,6 +1,7 @@
 body {
   display: flex;
   flex-direction: column;
+  background-image: url("../img/bananapattern.jpg");
 }
 
 header {
@@ -20,13 +21,44 @@ header {
   }
 
   .contentbox {
+    display: flex;
     margin: 10px;
     text-align: justify;
+    background-color: pink;
+    width: 90%;
+    justify-content: center;
   }
 
   .whole {
     display: flex;
     flex-direction: row;
+  }
+
+  .arrow {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  }
+
+  .arrowOut {
+  position: absolute;
+  left: 400px;
+  top: 0px;
+  transform: rotate(180deg);
+  }
+
+  .menu {
+    position: absolute;
+    top: 40px;
+    left: -340px;
+    background:
+  }
+
+
+  .menuOut {
+    position: absolute;
+    top: 40px;
+    left: 100px;
   }
 
   nav {
@@ -36,9 +68,13 @@ header {
 
   }
 
+  .a:hover{
+    color: blue;
+  }
+
   a {
-    font-size: 40px;
-    color: #00FF00;
+    font-size: 70px;
+    color: #212121;
     text-decoration: none;
   }
 
