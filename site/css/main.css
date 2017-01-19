@@ -11,7 +11,39 @@ header {
   justify-content: center;
 }
 
-@media (orientation:portrait) {
+footer{
+  display: flex;
+  font-size: 30px;
+  color: #FFFFFF;
+  background-color: #212121;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+
+
+nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+
+h1 {
+  font-size: 70px;
+  background-color: pink;
+}
+
+h2 {
+  width: 500px;
+  text-align: center;
+  font-size: 40px;
+}
+
+
   main {
     display: flex;
     flex-direction: column;
@@ -20,38 +52,16 @@ header {
     margin-left: 5%;
   }
 
-  .contentbox {
-    display: flex;
-    margin: 10px;
-    text-align: justify;
-    background-color: pink;
-    width: 90%;
-    justify-content: center;
-  }
-
-  .whole {
+@media (orientation:landscape) {
+  .greatbox {
     display: flex;
     flex-direction: row;
   }
 
-  .arrow {
-  position: absolute;
-  left: 0px;
-  top: 0px;
-  }
-
-  .arrowOut {
-  position: absolute;
-  left: 400px;
-  top: 0px;
-  transform: rotate(180deg);
-  }
-
   .menu {
-    position: absolute;
+    position: fixed;
     top: 40px;
-    left: -340px;
-    background:
+    left: 0px;
   }
 
 
@@ -64,17 +74,65 @@ header {
     padding-right: 80px;
     padding-top: 100px;
     padding-bottom: 20px;
+
   }
 
-  nav {
+  a {
+    font-size: 40px;
+    color: #212121;
+    text-decoration: none;
+  }
+
+  .contentbox {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    text-align: justify;
+    background-color: pink;
+    width: 90%;
+    justify-content: center;
+    align-items: center;
+    margin-left: 120px;
+  }
+
+}
+
+@media (orientation:portrait) {
+
+  .greatbox {
     display: flex;
     flex-direction: column;
     align-items: center;
-
   }
 
-  .a:hover{
-    color: blue;
+  .contentbox {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    text-align: justify;
+    background-color: pink;
+    width: 90%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .menu {
+    position: absolute;
+    top: 40px;
+    left: -340px;
+  }
+
+
+  .menuOut {
+    position: absolute;
+    top: -60px;
+    left: 0px;
+    background-color: pink;
+    padding-left: 20px;
+    padding-right: 80px;
+    padding-top: 100px;
+    padding-bottom: 20px;
+
   }
 
   a {
@@ -82,18 +140,17 @@ header {
     color: #212121;
     text-decoration: none;
   }
-
-  h1 {
-    font-size: 70px;
-    background-color: pink;
+  
+  .arrow {
+  position: absolute;
+  left: 0px;
+  top: 0px;
   }
 
-  footer{
-    display: flex;
-    font-size: 30px;
-    color: #FFFFFF;
-    background-color: #212121;
-    align-items: center;
-    justify-content: center;
+  .arrowOut {
+  position: absolute;
+  left: 400px;
+  top: 0px;
+  transform: rotate(180deg);
   }
 }
